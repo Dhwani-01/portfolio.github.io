@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+
+}
+
+.sidebar{
+    /* background-color: red; */
+    /* position: absolute; */
+    background-color: rgb(214, 209, 209);
+    /* width: 434px; */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    height:100vh;
+    transition: transform 0.3 ease-in;
+}
+
+.sidebar nav{
+    padding :45px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+.main{
+    /* background-color: yellow; */
+    width:90vw;
+}
+
+.container{
+    display:flex;
+    background-image: url('yellow.jpg');
+    background-repeat: no-repeat;
+    background-size: 400vw 150vh;
+}
+
+.infoContainer{
+    background-color: rgb(224, 191, 224);
+    height:58vh;
+    width:90vw;
+    margin: 144px auto;
+    display:flex;
+    justify-content: space-around;
+
+}
+
+.devInfo{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    /* margin-left: 12vw;  */
+    font-family: 'Source Code Pro', monospace;
+    /* width: 150vw;*/
+} 
+
+.hello{
+    font-size: 58px;
+}
+
+.name{
+    font-size: 40px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: bold;
+}
+
+.about{
+    font-size: 30px;
+}
+
+.button{
+    margin-top: 34px;
+    /* width: 100px; */
+}
+
+.button button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 0 3px;
+    cursor:pointer;
+}
+
+.button button:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+
+.devPic img{
+    height:58vh;
+   /* width: 50vw; */
+} 
+.devPic{
+    width: 40vw;
+}
+
+.contactform{
+    padding: 0 30px;
+    padding-top: 144px;
+    margin: 0 88px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.contactform h1{
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    padding: 12px 0;
+
+}
+
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input{
+    width: 16vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp{
+    font-size: 10px;
+    color: midnightblue;
+    margin: 0 5px;
+}
+
+#form-check{
+    flex-direction: row;
+}
+
+#form-check input{
+    width: 24px;
+    margin: 3px 0;
+}
+
+#btn{
+    width:150px;
+    padding: 0;
+}
+
+.blogcontainer{
+    margin: 50px;
+    font-size: 15px;
+}
+.blogitem{
+    margin: 20px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.blogcontainer h2{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 15px;
+}
+
+.blogitem p{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.skillitem{
+    display: flex;
+    align-items: center;
+}
+
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+}
+.t5{
+    width: 50px;
+    background-color: black;
+}
+.t1{
+    width: 100px;
+    background-color: rgb(50, 38, 135);
+}
+
+.t3{
+    width:75px;
+    background-color: rgb(204, 56, 19);
+}
+
+.sidebarGo{
+    transform: translate(-443px,0px);
+    position: absolute;
+}
+
+.hamburger{
+    position:absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross{
+    margin-left: 185px;
+    margin-top: 10px;
+}
+
+/* .History{
+    margin-left: 60px;
+    margin-top: 60px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.History p{
+    font-size: 20px;
+}
+
+#Marks{
+    margin-top: 5px;
+}
+
+.Academic{
+    
+} */
+
+.devInfoinfo{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    /* margin-left: 12vw;  */
+    font-family: 'Source Code Pro', monospace;
+    width: 150vw;
+}
+
+
+@media(max-width:762px){
+    /* *{
+         background-color: red; 
+    }*/
+    /* .sidebar{
+        transform: translate(-443px,0px);
+        position: absolute;
+    } */
+    .devPic{
+        display: none;
+    }
+    .blogcontainer,.infoContainer,.contactform{
+        margin: 50 p8px;
+    }
+}
+
+
